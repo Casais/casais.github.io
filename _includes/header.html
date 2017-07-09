@@ -1,5 +1,5 @@
 <header class="header" role="banner">
-  <div class="header__bar wrapper">
+  <section class="header__bar wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <!--<a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
@@ -28,11 +28,29 @@
       </div>
     </nav>
     {% endif %}
-  </div>
+  </section>
   <section class="intro">
     <p>Howdy! My name is</p>
     <p class="intro__name">Cristian Casais</p>
     <p>and I'm a Front End Engineer</p>
+    <a href="mailto:casais@outlook.com" class="intro__contact">Get in touch</a>
+    <!--<section class="intro__social">
+      <a href="https://github.com/Casais" target="_blank" title="GitHub">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/Casais92" target="_blank" title="Twitter">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/casais92/" target="_blank" title="Instagram">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ccasais/" target="_blank" title="LinkedIn">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </section>-->
   </section>
-  <img class="scroll-down" src="{{ "/images/mouse.svg" | relative_url }}" alt="Scroll down" title="Scroll down">
+  <section class="scroll-down">
+    <img src="{{ "/images/mouse.svg" | relative_url }}" alt="Scroll down" title="Scroll down">
+    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+  </section>
 </header>
