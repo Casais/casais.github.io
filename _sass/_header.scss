@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   border: none;
-  background: #4568DC;  // fallback for old browsers
+  background: $primary-color;  // fallback for old browsers
   background: -webkit-linear-gradient($header-gradient-angle, rgba($accent-color, $header-gradient-opacity),
           rgba($primary-color, $header-gradient-opacity)), url($header-image-url) no-repeat center center fixed;
   background: linear-gradient($header-gradient-angle, rgba($accent-color, $header-gradient-opacity),
@@ -52,7 +52,6 @@
   width: 90%;
   font-size: 27px;
   text-align: center;
-  font-family: $zilla-slab;
   opacity: .95;
 
   @include media-query($on-mobile) {
@@ -69,6 +68,10 @@
   @include media-query($on-mobile) {
     font-size: 50px;
   }
+}
+
+.intro__text {
+  font-family: $zilla-slab;
 }
 
 .intro__contact {

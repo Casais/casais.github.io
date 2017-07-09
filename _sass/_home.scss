@@ -1,0 +1,66 @@
+main h2 {
+  display: inline-block;
+  color: $primary-color;  // fallback for old browsers
+  background: -webkit-linear-gradient($section-title-gradient-angle, $accent-color, $primary-color);
+  background: linear-gradient($section-title-gradient-angle, $accent-color, $primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main p,
+main ul {
+  text-align: justify;
+  color: $grey-color;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+main ul li {
+  margin-bottom: 5px;
+}
+
+main hr {
+  height: 2px;
+  border: none;
+  margin: 30px 0;
+  background: $primary-color;  // fallback for old browsers
+  background: -webkit-linear-gradient($hr-gradient-angle, $accent-color, $primary-color);
+  background: linear-gradient($hr-gradient-angle, $accent-color, $primary-color);
+}
+
+.experience__entry {
+  position: relative;
+}
+
+.experience__title {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.experience__date-range {
+  font-size: 14px;
+  color: $grey-color-dark;
+  margin-top: 4px;
+}
+
+.experience__company {
+  color: $grey-color;
+  font-weight: 400;
+}
+
+.experience__logo {
+  height: 35px;
+  opacity: .7;
+  position: absolute;
+  top: 6px;
+  right: 0;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.experience__logo--newtec {
+  height: 25px;
+  top: 9px;
+}

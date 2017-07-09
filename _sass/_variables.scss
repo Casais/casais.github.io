@@ -18,7 +18,7 @@ $on-laptop: 800px !default;
 $brand-color: #2a7ae2 !default;
 $text-color: #111 !default;
 $background-color: #eee !default;
-$grey-color: #828282 !default;
+$grey-color: #6b6b6b !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
 $primary-color: #4568dc;
@@ -29,3 +29,7 @@ $header-image-url: '/images/header-bg.jpg'; // Berlin <3
 $header-gradient-opacity: .93;
 $header-gradient-angle: 140deg;
 $header-bar-height: 50px;
+
+// Home
+$section-title-gradient-angle: 120deg;
+$hr-gradient-angle: 120deg;
