@@ -1,0 +1,68 @@
+.header {
+  height: 100vh;
+  border: none;
+  background: #4568DC;  // fallback for old browsers
+  background: -webkit-linear-gradient($header-gradient-angle, rgba($accent-color, $header-gradient-opacity),
+          rgba($primary-color, $header-gradient-opacity)), url($header-image-url) no-repeat center center fixed;
+  background: linear-gradient($header-gradient-angle, rgba($accent-color, $header-gradient-opacity),
+          rgba($primary-color, $header-gradient-opacity)), url($header-image-url) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.header__bar {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.header__title,
+.header__title:visited,
+.site-nav .page-link {
+  color: white;
+  opacity: .6;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+
+  &:hover {
+    opacity: .9;
+    text-decoration: none;
+  }
+}
+
+.header__logo {
+  height: $header-bar-height;
+}
+
+.site-nav {
+  line-height: $header-bar-height;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  font-size: 27px;
+  color: white;
+  text-align: center;
+  font-family: $zilla-slab;
+  opacity: .95;
+}
+
+.intro__name {
+  font-size: 70px;
+  line-height: 85px;
+  font-family: $lato;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+}

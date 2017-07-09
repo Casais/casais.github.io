@@ -1,0 +1,30 @@
+// Fonts
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$lato: 'Lato', sans-serif;
+$zilla-slab: 'Zilla Slab', serif;
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+// Spacing, containers and breakpoints
+$spacing-unit: 30px !default;
+$content-width: 800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+// Colors
+$brand-color: #2a7ae2 !default;
+$text-color: #111 !default;
+$background-color: #eee !default;
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
+$primary-color: #4568dc;
+$accent-color: #b06ab3;
+
+// Header
+$header-image-url: '/images/header-bg.jpg'; // Berlin <3
+$header-gradient-opacity: .93;
+$header-gradient-angle: 140deg;
+$header-bar-height: 50px;
