@@ -15,21 +15,24 @@ $on-palm: 600px !default;
 $on-laptop: 800px !default;
 
 // Colors
-$brand-color: #2a7ae2 !default;
+$primary-color: #82add6;
+$primary-color-dark: darken($primary-color, 10%);
+$primary-color-darker: darken($primary-color, 20%);
+$brand-color: $primary-color !default;
 $text-color: #111 !default;
 $background-color: #eee !default;
 $grey-color: #6b6b6b !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark: darken($grey-color, 25%) !default;
-$primary-color: #4568dc;
-$accent-color: #b06ab3;
+$grey-color-dark: #333 !default;
+$grey-color-darker: #1c1c1c !default;
 
 // Header
-$header-image-url: '/images/header-bg.jpg'; // Berlin <3
-$header-gradient-opacity: .93;
-$header-gradient-angle: 140deg;
+$header-image-url: '/images/header-bg.jpg';
+$header-gradient-opacity: .9;
+$header-gradient-angle: 180deg;
 $header-bar-height: 50px;
 
 // Home
-$section-title-gradient-angle: 120deg;
-$hr-gradient-angle: 120deg;
+$home-gradient-angle: 120deg;
+$home-gradient-color-left: $primary-color-darker;
+$home-gradient-color-right: $primary-color-dark;
