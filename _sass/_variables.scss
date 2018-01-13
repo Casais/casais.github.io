@@ -18,6 +18,7 @@ $on-laptop: 800px !default;
 $primary-color: #82add6;
 $primary-color-dark: darken($primary-color, 10%);
 $primary-color-darker: darken($primary-color, 20%);
+$accent-color: #b06ab3;
 $brand-color: $primary-color !default;
 $text-color: #111 !default;
 $background-color: #eee !default;
@@ -28,11 +29,11 @@ $grey-color-darker: #1c1c1c !default;
 
 // Header
 $header-image-url: '/images/header-bg.jpg';
-$header-gradient-opacity: .9;
+$header-gradient-opacity: .85;
 $header-gradient-angle: 180deg;
 $header-bar-height: 50px;
 
 // Home
-$home-gradient-angle: 120deg;
-$home-gradient-color-left: $primary-color-darker;
+$home-gradient-angle: 150deg;
+$home-gradient-color-left: $accent-color;
 $home-gradient-color-right: $primary-color-dark;
