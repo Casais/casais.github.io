@@ -10,7 +10,7 @@ $base-line-height: 1.5 !default;
 // Spacing, containers and breakpoints
 $spacing-unit: 30px !default;
 $content-width: 800px !default;
-$on-mobile: 400px !default;
+$on-mobile: 425px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
 
@@ -23,7 +23,8 @@ $brand-color: $primary-color !default;
 $text-color: #111 !default;
 $background-color: #eee !default;
 $grey-color: #6b6b6b !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-light: lighten($grey-color, 20%) !default;
+$grey-color-lighter: lighten($grey-color, 40%) !default;
 $grey-color-dark: #333 !default;
 $grey-color-darker: #1c1c1c !default;
 

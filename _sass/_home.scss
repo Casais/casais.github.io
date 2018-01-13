@@ -1,82 +1,86 @@
-main h2 {
-  text-align: center;
+main {
   position: relative;
-  display: inline-block;
-  font-size: 24px;
-  left: -1px;
-  color: $primary-color;  // fallback for old browsers
-  background: linear-gradient($home-gradient-angle, $home-gradient-color-left, $home-gradient-color-right);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-main p,
-main ul {
-  text-align: left;
-  color: $grey-color;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-main ul li {
-  position: relative;
-  margin-bottom: 5px;
-  list-style: none;
-
-  &:before {
-    content: '\2022';
-    position: absolute;
-    top: 13px;
-    left: -18px;
-    color: $primary-color-dark;
+  h2 {
+    text-align: center;
+    position: relative;
+    display: inline-block;
     font-size: 24px;
-    line-height: 0;
+    left: -1px;
+    color: $primary-color-dark; // fallback for old browsers
+    background: linear-gradient($home-gradient-angle, $home-gradient-color-left, $home-gradient-color-right);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    text-align: justify;
+
+    @include media-query($on-mobile) {
+      text-align: left;
+    }
+  }
+
+  p, ul {
+    color: $grey-color;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  ul li {
+    position: relative;
+    margin-bottom: 5px;
+    list-style: none;
+
+    &:before {
+      content: '\2022';
+      position: absolute;
+      top: 13px;
+      left: -18px;
+      color: $primary-color-dark;
+      font-size: 24px;
+      line-height: 0;
+    }
   }
 }
 
-main hr {
-  height: 2px;
-  border: none;
-  margin: 50px auto;
-  background: $primary-color;  // fallback for old browsers
-  background: -webkit-linear-gradient($home-gradient-angle, $home-gradient-color-left, $home-gradient-color-right);
-  background: linear-gradient($home-gradient-angle, $home-gradient-color-left, $home-gradient-color-right);
-  opacity: .5;
-}
+.experience {
 
-.experience__entry {
-  position: relative;
-}
-
-.experience__title {
-  margin-bottom: 0;
-  font-weight: 500;
-}
-
-.experience__date-range {
-  font-size: 14px;
-  color: $grey-color-dark;
-  margin-top: 4px;
-}
-
-.experience__company {
-  color: $grey-color;
-  font-weight: 400;
-}
-
-.experience__logo {
-  height: 35px;
-  opacity: .7;
-  position: absolute;
-  top: 6px;
-  right: 0;
-
-  @include media-query($on-palm) {
-    display: none;
+  &__entry {
+    position: relative;
+    margin-bottom: 20px;
   }
-}
 
-.experience__logo--newtec {
-  height: 25px;
-  top: 9px;
+  &__title {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  &__company {
+    color: $grey-color;
+    font-weight: 400;
+  }
+
+  &__date-range {
+    font-size: 14px;
+    color: $grey-color-dark;
+    margin-top: 4px;
+  }
+
+  &__logo {
+    height: 35px;
+    opacity: .7;
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    @include media-query($on-palm) {
+      display: none;
+    }
+
+    &--newtec {
+      height: 25px;
+      top: 9px;
+    }
+  }
 }

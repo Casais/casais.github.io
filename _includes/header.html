@@ -2,6 +2,7 @@
   <section class="top-bar wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
+    <!--
     {% if page_paths %}
     <nav class="main-nav">
       {% for path in page_paths %}
@@ -12,6 +13,7 @@
       {% endfor %}
     </nav>
     {% endif %}
+    -->
   </section>
   <section class="intro">
     <p class="intro__text">Howdy! My name is</p>
